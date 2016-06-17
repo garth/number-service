@@ -1,0 +1,42 @@
+{
+  "name": "number-service",
+  "version": "1.0.0",
+  "description": "Converts numbers into English text",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "standard 'src/**/*.js' 'test/**/*.js' --verbose | snazzy",
+    "pretest": "npm run lint",
+    "test": "mocha --recursive",
+    "start": "node src/index.js"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/garth/number-service.git"
+  },
+  "author": "Garth Williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/garth/number-service/issues"
+  },
+  "homepage": "https://github.com/garth/number-service#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "snazzy": "^4.0.0",
+    "standard": "^7.1.2",
+    "supertest": "^1.2.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
